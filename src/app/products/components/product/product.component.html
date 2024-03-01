@@ -1,1 +1,5 @@
-<button (click)="listProducts()">boton</button>
+<div *ngFor="let p of listProducts">
+  <img [src]="p.image" style="width: 300px;" alt="">
+  <h1>{{p.title}}</h1>
+  <p> {{p.description}} </p>
+</div>
